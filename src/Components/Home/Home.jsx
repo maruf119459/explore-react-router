@@ -3,7 +3,8 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 const Home = () => {
-    const navigation = useNavigation(); // use kora hoy -> data loading track rakhar jonno
+    const navigation = useNavigation();
+    console.log(navigation) // use kora hoy -> data loading track rakhar jonno
     const location = useLocation(); // use kora hoy user kon page ache seta dekha jonno
     console.log(location);
     return (
@@ -30,11 +31,11 @@ export default Home;
 /*
 useNavigationO
 
-This Hook gives the developer access to properties that show the state of a currently rendered route.
+. This Hook gives the developer access to properties that show the state of a currently rendered route.
 
-For example, this Hook can indicate when a route is "loading" or when a form on the route is "submitting" as well as "idle" when there is no navigation pending.
+. For example, this Hook can indicate when a route is "loading" or when a form on the route is "submitting" as well as "idle" when there is no navigation pending.
 
-It is useful for building loading indicators or optimistically updating data on a page.
+. It is useful for building loading indicators or optimistically updating data on a page.
 
 
 
